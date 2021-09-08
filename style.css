@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#div1{
+    position: fixed;
+    right: 150px;
+    top: 80px;
+}
+#cv{
+    word-wrap: break-word;
+}
+
+@media (max-width: 500px) {
+    #cv{
+        height: 50vh;
+        top: 0;
+        overflow-y:auto;
+    }
+    #div1{
+        height: 50vh;
+        top: 50%;
+        right: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        bottom: 0;
+    }
+}
